@@ -4,6 +4,7 @@ fn main() {
     let mut fov: f32 = 70.0; //angle of sight
     let mut screensize: [u64; 2] = getscreensize(); //chashes the current size should only run if window is changed,
     let mut basecompare: [u64; 2] = setcentercompare(screensize); //finds the center of x and y to determine angle displacment later, should only run if window is changed
+    let mut windowart: [ [ [u64; 4]; screensize[0] ]; screensize[1] ]; //the pixels colors for a 2D grid in an array
     let i: u64 = 0;  //for x for loop
     for _ in 0..screensize[0] {
         //code
