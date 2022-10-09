@@ -10,7 +10,7 @@ fn main() {
         let n: u64 = 0;  //for y for loop
         for _ in 0..screensize[1] {
             //code
-            let angledisplacmenthorizontil: i64 = getangledisplacment(distacefromcenter);
+            let angledisplacmenthorizontil: i64 = getangledisplacment(distacefromcenter); //dosn't need to be mutable because the life time will run out at end of loop
             let angledisplacmentvertical: i64 = getangledisplacment(distacefromcenter);
             //itarate n for y value
             n += 1;
