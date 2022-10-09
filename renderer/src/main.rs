@@ -33,6 +33,6 @@ fn getangledisplacment(distacefromcenter: u64) -> i64 {
 
 }
 
-fn raymarch(anglehorizontile: i64, anglevertical: i64) -> [u64; 2] { //returns the cords of the found objects pixel
+fn raymarch(anglehorizontile: i64, anglevertical: i64) -> [u64; 4] { //returns the rgba color value of pixle
 
 }
