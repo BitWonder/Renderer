@@ -4,7 +4,7 @@ struct Camera {
     position_z: f64, //where it is in 3D space - set to 0 for 2D game
     horizontal: f64, //horizontal angle - set to 0 for 2D game
     vertical_a: f64, //vertical angle - set to 0 for 2D game
-    camera_fov: f64, //the angle of max sight of total view
+    camera_fov: f32, //the angle of max sight of total view
     cam_f_stop: u64, //saturation of color
 }
 
