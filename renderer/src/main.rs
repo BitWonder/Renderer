@@ -5,26 +5,30 @@ struct Camera {
     horizontal: f64, //horizontal angle - set to 0 for 2D game
     vertical_a: f64, //vertical angle - set to 0 for 2D game
     camera_fov: f64, //the angle of max sight of total view
-    cam_f_stop: f64, //saturation of color
+    cam_f_stop: u64, //saturation of color
 }
 
 struct Screen {
     width: u64,
     height: u64,
-    display: [ [ [f32; 3]; self.width ]; self.height];
+    display: [ [ [f32; 3]; self.width ]; self.height],
 }
 
 fn main() {
     //see if screen size has changed and change num of drawn pixels
-    screensize = getscreensize(); //top left is 0,0
-    //get camera pos and angle
-    camera = getcamera();
-}
-
-fn getscreensize() -> [u64; 2] {
-
-}
-
-fn getcamera() -> [u64; 6] { //returns (in order) camera pos x, y, z, and camera angle horizonitle, vertical, camera FOV
-
+    screen = Screen {
+        width: 0,
+        height: 0,
+        display: 0,
+    }; //top left is 0,0
+    //set up the camera
+    camera = Camera {
+        position_x: 0.0,
+        position_y: 0.0,
+        position_z: 0.0,
+        horizontal: 0.0,
+        vertical_a: 0.0,
+        camera_fov: 70.0,
+        cam_f_stop: 0,
+    };
 }
