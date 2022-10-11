@@ -8,6 +8,12 @@ struct Camera {
     cam_f_stop: f64, //saturation of color
 }
 
+struct Screen {
+    width: u64,
+    height: u64,
+    display: [ [ [f32; 3]; self.width ]; self.height];
+}
+
 fn main() {
     //see if screen size has changed and change num of drawn pixels
     screensize = getscreensize(); //top left is 0,0
